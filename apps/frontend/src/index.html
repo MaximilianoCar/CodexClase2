@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cursos</title>
+        <link rel="stylesheet" href="../src/css/styles.css" />
+    </head>
+    <body>
+        <header class="header clearfix">
+            <div class="logo">
+                <a href="#">
+                    <img src="assets/logo.png" alt="CODEX Logo" />
+                </a>
+            </div>
+
+            <nav class="nav">
+                <ul>
+                    <li><a href="#" class="activo">Cursos</a></li>
+                    <li><a href="#">Iniciar sesión</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="container">
+            <h1>Gestion de cursos</h1>
+
+            <form id="curso-form" class="card form-flex">
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" name="nombre" type="text" required />
+                </div>
+
+                <div>
+                    <label for="descripcion">Descripcion</label>
+                    <input
+                        id="descripcion"
+                        name="descripcion"
+                        type="text"
+                        required
+                    />
+                </div>
+
+                <div class="actions">
+                    <button id="submit-btn" type="submit">Crear curso</button>
+                </div>
+            </form>
+
+            <section class="card">
+                <h2>Listado</h2>
+                <p id="estado" class="estado">Cursos disponibles</p>
+                <ul id="lista" class="lista">
+                    <li class="curso item">
+                        <div class="item-info">
+                            <strong>Curso de Base de Datos</strong>
+                            <span>curso</span>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="card">
+                <h2>Listado de facilitadores</h2>
+                <p id="estado" class="estado">Facilitadores disponibles</p>
+                <ul id="lista" class="lista">
+                    <li class="facilitador item">
+                        <div class="item-info">
+                            <strong>Facilitador de Base de Datos</strong>
+                            <span>facilitador</span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="item-actions">
+                    <button
+                        type="button"
+                        data-action="buscar"
+                        data-id="${curso.id}"
+                        data-nombre="${curso.nombre}"
+                        data-descripcion="${curso.descripcion}"
+                    >
+                        Buscar
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        <script src="../src/js/app.js"></script>
+    </body>
+</html>
