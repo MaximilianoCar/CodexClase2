@@ -63,7 +63,7 @@ const obtenerFacilitadores = async () => {
         listaFacilitadores.innerHTML = "";
 
         // renderizar cada facilitador procesado
-        facilitadores.forEach((facilitador) => {
+        for (const facilitador of facilitadores) {
             const li = document.createElement("li");
             li.className = "facilitador item";
             li.innerHTML = `
@@ -73,7 +73,7 @@ const obtenerFacilitadores = async () => {
                 </div>
             `;
             listaFacilitadores.appendChild(li);
-        });
+        }
     } catch (error) {
         console.error("Error al consultar la API:", error);
         listaFacilitadores.innerHTML = `
