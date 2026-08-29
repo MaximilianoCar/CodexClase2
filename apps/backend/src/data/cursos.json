@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "nombre": "Desarrollo Web 3",
+    "descripcion": "HTML, CSS y JS básico 3"
+  },
+  {
+    "id": 2,
+    "nombre": "Express Avanzado",
+    "descripcion": "Backend estructurado con Node.js"
+  },
+  {
+    "id": 3,
+    "nombre": "Bases de Datos",
+    "descripcion": "Curso de BD y SQL"
+  }
+]
