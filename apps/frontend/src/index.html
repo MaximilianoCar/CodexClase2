@@ -42,47 +42,24 @@
 
                 <div class="actions">
                     <button id="submit-btn" type="submit">Crear curso</button>
+                    <button id="cancel-btn" class="secondary hidden" type="button">Cancelar</button>
                 </div>
             </form>
 
             <section class="card">
                 <h2>Listado</h2>
-                <p id="estado" class="estado">Cursos disponibles</p>
-                <ul id="lista" class="lista">
-                    <li class="curso item">
-                        <div class="item-info">
-                            <strong>Curso de Base de Datos</strong>
-                            <span>curso</span>
-                        </div>
-                    </li>
-                </ul>
+                <p id="estado-cursos" class="estado">Cargando cursos...</p>
+                <ul id="lista-cursos" class="lista"></ul>
             </section>
 
             <section class="card">
                 <h2>Listado de facilitadores</h2>
-                <p id="estado" class="estado">Facilitadores disponibles</p>
-                <ul id="lista" class="lista">
-                    <li class="facilitador item">
-                        <div class="item-info">
-                            <strong>Facilitador de Base de Datos</strong>
-                            <span>facilitador</span>
-                        </div>
-                    </li>
-                </ul>
-                <div class="item-actions">
-                    <button
-                        type="button"
-                        data-action="buscar"
-                        data-id="${curso.id}"
-                        data-nombre="${curso.nombre}"
-                        data-descripcion="${curso.descripcion}"
-                    >
-                        Buscar
-                    </button>
-                </div>
+                <p id="estado-facilitadores" class="estado">Cargando facilitadores...</p>
+                <ul id="lista-facilitadores" class="lista"></ul>
             </section>
         </main>
 
+        <script src="../src/js/api.js"></script>
         <script src="../src/js/app.js"></script>
     </body>
 </html>
