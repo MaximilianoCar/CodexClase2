@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "nombre": "Juan Pérez",
+    "especialidad": "Desarrollo Web"
+  },
+  {
+    "id": 2,
+    "nombre": "María López",
+    "especialidad": "Express Avanzado"
+  }
+]
