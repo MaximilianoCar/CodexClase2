@@ -29,7 +29,7 @@ const renderizarCursos = (cursos) => { //// Limpia y construye dinámicamente la
         info.className = "item-info";
 
         const nombre = document.createElement("strong");
-        nombre.textContent = curso.nombre;
+        nombre.textContent = curso.titulo;
 
         const descripcion = document.createElement("span");
         descripcion.textContent = curso.descripcion;
@@ -100,7 +100,7 @@ const cargarFacilitadores = async () => {
 
 const iniciarEdicion = (curso) => {
     cursoEnEdicion = curso.id;
-    nombreInput.value = curso.nombre;
+    nombreInput.value = curso.titulo;
     descripcionInput.value = curso.descripcion;
     submitButton.textContent = "Guardar cambios";
     cancelButton.classList.remove("hidden");
