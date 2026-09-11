@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://localhost:3000/api";
+const API_BASE_URL = "https://codexclase2-1.onrender.com/api";
 
 const solicitar = async (ruta, opciones = {}) => {
     const respuesta = await fetch(`${API_BASE_URL}${ruta}`, { //construimos fetch de forma dinámica, con la ruta que le pasemos y la base url
